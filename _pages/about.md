@@ -9,9 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>425 Hillsborough St</p>
+    <p>Chapel Hill, NC, 27514</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -32,10 +31,11 @@ Economics. I build end-to-end data projects in Python and R, from cleaning and
 organizing data to modeling, visualization, and write-ups that make results easy
 to use. I'm most interested in applied machine learning and data analysis,
 especially when it connects to real-world questions across different fields.
-Recently, I have been building a basketball analytics pipeline that uses
-RF-DETR for player and ball detection, SAM2 for tracking across frames, SigLIP
-embeddings with K-means for team grouping, and OCR models to read jersey
-numbers.
+Recently, I have been building a computer vision pipeline that detects, 
+tracks, and identifies key data for basketball analytics.
+
+In my free time I enjoy trying playing basketball, trying new restaurants, and
+spreading positivity.
 
 I'm currently seeking research opportunities for Spring 2026, Summer 2026, and
 Fall 2026.
