@@ -2,8 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: I'm currently seeking research opportunities for Spring 2026, Summer 2026, and
-Fall 2026.
+subtitle: I'm currently seeking research opportunities for Spring 2026, Summer 2026, and Fall 2026.
 
 
 profile:
@@ -37,7 +36,4 @@ Recently, I have been building a computer vision pipeline that detects,
 tracks, and identifies key data for basketball analytics.
 
 In my free time I enjoy trying playing basketball, trying new restaurants, and
-spreading positivity.
-
-I'm currently seeking research opportunities for Spring 2026, Summer 2026, and
-Fall 2026.
+spreading positivity! 
