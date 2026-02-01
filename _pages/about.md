@@ -2,7 +2,9 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: I'm currently seeking research opportunities for Spring 2026, Summer 2026, and
+Fall 2026.
+
 
 profile:
   align: right
