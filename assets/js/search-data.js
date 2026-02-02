@@ -449,11 +449,6 @@ ninja.data = [{
           description: "an other project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
             },},{id: "projects-ncaa-men-39-s-basketball-wins-prediction",
           title: 'NCAA Men&amp;#39;s Basketball Wins Prediction',
           description: "Predicts NCAA Division I men&#39;s regular-season wins from team-season efficiency stats using season-based evaluation and interpretable models.",
