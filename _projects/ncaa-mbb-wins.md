@@ -44,3 +44,5 @@ within about two wins and identify the teams most over- and under-predicted in
 
 **Links**
 GitHub: [Repository README](https://github.com/stephenchen06/ncaa-mbb-win-model/blob/main/README.md) | Report: N/A | Demo: N/A
+
+_Last updated: 2026-02-02_
