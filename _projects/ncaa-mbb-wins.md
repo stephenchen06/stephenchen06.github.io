@@ -37,5 +37,10 @@ within about two wins and identify the teams most over- and under-predicted in
 - Holdout 2023: R^2 0.807, MAE 2.16 wins
 - Baselines: MAE 5.08 (mean) and 3.14 (ADJOE-ADJDE)
 
+**Figures**
+{% include figure.liquid path="/assets/img/predicted_vs_actual_holdout.png" title="Predicted vs Actual Wins (Holdout 2023)" %}
+{% include figure.liquid path="/assets/img/learning_curve_mae.png" title="Learning Curve (MAE) - Linear Regression" %}
+{% include figure.liquid path="/assets/img/standardized_coefficients.png" title="Standardized Coefficients (Linear Regression)" %}
+
 **Links**
 GitHub: [Repository README](https://github.com/stephenchen06/ncaa-mbb-win-model/blob/main/README.md) | Report: N/A | Demo: N/A
