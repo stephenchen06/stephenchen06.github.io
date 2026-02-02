@@ -6,43 +6,42 @@ img: /assets/img/ncaa-predictions-thumbnail.jpg
 importance: 2
 category: work
 ---
+This project predicts NCAA Division I men’s basketball regular-season wins from team-season efficiency metrics. The dataset is one row per team-season from 2013–2023 (plus a separate 2020 file) from [BartTorvik.com](https://barttorvik.com/#). The goal is to show that a compact, interpretable feature set can explain a large share of team success. I built a reproducible pipeline: a single script generates all metrics, plots, and tables, and a clean notebook documents the full analysis.
 
-This project predicts NCAA Division I men's basketball regular-season wins from
-team-season performance metrics, aiming to show how a compact, interpretable
-feature set can explain team success. I built a portfolio-ready pipeline: a
-single script reproduces all metrics, plots, and tables, and a clean notebook
-documents the full analysis.
+{% include figure.liquid path="/assets/img/predicted_vs_actual_holdout.png" title="Predicted vs Actual Wins (Holdout 2023). MAE is 2.16 wins on the 2023 holdout; good predictions sit near the diagonal." %}
 
-The dataset contains one row per team-season from 2013-2023 (plus a separate
-2020 file), with features such as adjusted offense/defense (ADJOE/ADJDE) and
-shooting/turnover rates. Models were evaluated with a season holdout (train on
-seasons before 2023, test on 2023) and rolling year-by-year tests for
-2019-2023. Three simple models-Linear Regression, Ridge, and Lasso-were
-compared to baselines (mean wins and ADJOE-ADJDE only). The chosen model was
-Linear Regression for simplicity, reaching R^2 0.807 and MAE 2.16 wins on the
-2023 holdout, substantially better than the baselines (MAE 5.08 and 3.14 wins).
+**What I Used**
+Data: one row per team-season (2013–2023, plus a separate 2020 file). Features
+include ADJOE, ADJDE, and shooting/turnover rates (e.g., EFG_O and EFG_D).
+Target: regular-season wins.
+Source: 
 
-To keep the model honest, I added correlation/VIF checks for multicollinearity
-and diagnostic plots (predicted vs actual, residuals, and a learning curve) to
-visualize generalization. The results show the model is accurate on average
-within about two wins and identify the teams most over- and under-predicted in
-2023.
+**How I Tested It**
+I held out the most recent season (train on seasons before 2023, test on 2023)
+and ran rolling year-by-year tests for 2019–2023. I compared Linear Regression,
+Ridge, and Lasso against two baselines: mean wins and ADJOE–ADJDE only. I report
+R^2 and MAE, where MAE is the average error in wins.
 
-**Key Methods**
-- Season-based holdout and rolling-year evaluation
-- Linear Regression, RidgeCV, LassoCV (standardized)
-- Residual/learning-curve diagnostics + VIF for multicollinearity
+**What I Found**
+Holdout 2023 performance: R^2 0.807 and MAE 2.16 wins (about two wins off on
+average). This beats the baselines (MAE 5.08 for mean wins; 3.14 for ADJOE–ADJDE
+only). The standardized coefficients show that shooting efficiency and
+turnover-related signals are among the strongest drivers of predicted wins.
 
-**Results**
-- Holdout 2023: R^2 0.807, MAE 2.16 wins
-- Baselines: MAE 5.08 (mean) and 3.14 (ADJOE-ADJDE)
+{% include figure.liquid path="/assets/img/standardized_coefficients.png" title="Standardized coefficients (Linear Regression). Larger magnitudes indicate stronger drivers; some overlap is expected because features are correlated." %}
 
-**Figures**
-{% include figure.liquid path="/assets/img/predicted_vs_actual_holdout.png" title="Predicted vs Actual Wins (Holdout 2023)" %}
-{% include figure.liquid path="/assets/img/learning_curve_mae.png" title="Learning Curve (MAE) - Linear Regression" %}
-{% include figure.liquid path="/assets/img/standardized_coefficients.png" title="Standardized Coefficients (Linear Regression)" %}
+{% include figure.liquid path="/assets/img/learning_curve_mae.png" title="Learning curve (MAE). Train and validation curves stay close, suggesting limited overfitting on recent seasons." %}
+
+**Limitations + Next Steps**
+This is correlational and some features are collinear (I ran correlation/VIF
+checks). Next steps: add schedule strength/tempo, improve error breakdowns, and
+continue stress-testing validation splits.
+
+**Packages Used**
+pandas, numpy, scikit-learn
 
 **Links**
-GitHub: [Repository README](https://github.com/stephenchen06/ncaa-mbb-win-model/blob/main/README.md) | Report: N/A | Demo: N/A
+GitHub: [Repository README](https://github.com/stephenchen06/ncaa-mbb-win-model/blob/main/README.md)
 
-_Last updated: 2026-02-02_
+## Sources
+Data: [Bart Torvik’s college basketball database](https://barttorvik.com/#)
