@@ -4,6 +4,7 @@ title: NCAA Men's Basketball Wins Prediction
 description: Predicts NCAA Division I men's regular-season wins from team-season efficiency stats using season-based evaluation and interpretable models.
 img: /assets/img/basketball-wins.jpg
 importance: 2
+category: work
 ---
 
 This project predicts NCAA Division I men's basketball regular-season wins from
