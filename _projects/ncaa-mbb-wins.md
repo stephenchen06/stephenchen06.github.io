@@ -11,7 +11,7 @@ This project predicts NCAA Division I men’s basketball regular-season wins fro
 
 {% include figure.liquid path="/assets/img/predicted_vs_actual_holdout.png" title="Predicted vs Actual Wins (Holdout 2023). MAE is 2.16 wins on the 2023 holdout; good predictions sit near the diagonal." %}
 
-**What I Used**
+### What I Used
 
 - Data: one row per team-season (2013–2023, plus a separate 2020 file). Features
 
@@ -19,8 +19,7 @@ include ADJOE, ADJDE, and shooting/turnover rates (e.g., EFG_O and EFG_D).
 
 - Target: regular-season wins.
 
-**How I Tested It**
-
+### How I Tested It
 
 I held out the most recent season (train on seasons before 2023, test on 2023)
 
@@ -30,8 +29,7 @@ Ridge, and Lasso against two baselines: mean wins and ADJOE–ADJDE only. I repo
 
 R^2 and MAE, where MAE is the average error in wins.
 
-**What I Found**
-
+### What I Found
 
 Holdout 2023 performance: R^2 0.807 and MAE 2.16 wins (about two wins off on
 
@@ -45,8 +43,7 @@ turnover-related signals are among the strongest drivers of predicted wins.
 
 {% include figure.liquid path="/assets/img/learning_curve_mae.png" title="Learning curve (MAE). Train and validation curves stay close, suggesting limited overfitting on recent seasons." %}
 
-**Limitations + Next Steps**
-
+### Limitations + Next Steps
 
 This is correlational and some features are collinear (I ran correlation/VIF
 
@@ -54,13 +51,11 @@ checks). Next steps: add schedule strength/tempo, improve error breakdowns, and
 
 continue stress-testing validation splits.
 
-**Packages Used**
-
+### Packages Used
 
 pandas, numpy, scikit-learn
 
-**Links**
-
+### Links
 
 - GitHub: [Repository README](https://github.com/stephenchen06/ncaa-mbb-win-model/blob/main/README.md)
 
