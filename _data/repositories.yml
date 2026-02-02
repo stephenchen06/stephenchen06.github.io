@@ -1,10 +1,9 @@
-github_users:
-  - torvalds
-  - alshedivat
+github_users: []
 
 repo_description_lines_max: 2
 
 github_repos:
+  - stephenchen06/ncaa-mbb-win-model
   - alshedivat/al-folio
   - jekyll/jekyll
   - twbs/bootstrap
