@@ -13,10 +13,7 @@ This project predicts NCAA Division I men’s basketball regular-season wins fro
 
 ### What I Used
 
-- Data: one row per team-season (2013–2023, plus a separate 2020 file). Features
-
-include ADJOE, ADJDE, and shooting/turnover rates (e.g., EFG_O and EFG_D).
-
+- Data: one row per team-season (2013–2023, plus a separate 2020 file). Features include ADJOE,ADJDE, and shooting/turnover rates (e.g., EFG_O and EFG_D).
 - Target: regular-season wins.
 
 ### How I Tested It
