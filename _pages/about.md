@@ -14,7 +14,7 @@ profile:
     <p>Chapel Hill, NC, 27514</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: false # includes a list of news items
@@ -37,3 +37,12 @@ tracks, and identifies key data for basketball analytics.
 
 In my free time I enjoy trying playing basketball, trying new restaurants, and
 spreading positivity! 
+
+<div class="custom-socials">
+  <a href="https://www.linkedin.com/in/stephen-chen-9324ab2a7" aria-label="LinkedIn">
+    <img src="/assets/img/linkedin.png" alt="LinkedIn" width="36" height="36">
+  </a>
+  <a href="https://unc.joinhandshake.com/profiles/p594p9" aria-label="Handshake">
+    <img src="/assets/img/handshake.jpg" alt="Handshake" width="36" height="36">
+  </a>
+</div>

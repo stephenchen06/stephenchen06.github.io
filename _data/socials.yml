@@ -2,10 +2,4 @@
 # the socials will be displayed in the order they are defined here
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
 
-custom_social:
-  - logo: /assets/img/linkedin.png
-    title: LinkedIn
-    url: https://www.linkedin.com/in/stephen-chen-9324ab2a7
-  - logo: /assets/img/handshake.jpg
-    title: Handshake
-    url: https://unc.joinhandshake.com/profiles/p594p9
+custom_social: {}
