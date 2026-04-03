@@ -414,6 +414,11 @@ ninja.data = [{
           description: "with background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
+            },},{id: "projects-clinical-notes-pipeline",
+          title: 'Clinical Notes Pipeline',
+          description: "Automated REDCap data extraction from Epic FHIR clinical notes using a local LLM — no PHI leaves the machine.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/clinical-notes-pipeline/";
             },},{id: "projects-ncaa-men-39-s-basketball-wins-prediction",
           title: 'NCAA Men&amp;#39;s Basketball Wins Prediction',
           description: "Predicts NCAA Division I men&#39;s regular-season wins from team-season efficiency stats using season-based evaluation and interpretable models.",
