@@ -400,12 +400,7 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "books-computational-and-inferential-thinking",
+      },{id: "books-computational-and-inferential-thinking",
           title: 'Computational and Inferential Thinking',
           description: "",
           section: "Books",handler: () => {
