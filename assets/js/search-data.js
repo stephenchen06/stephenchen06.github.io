@@ -410,6 +410,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/hands_on_ml/";
+            },},{id: "books-r-for-data-science",
+          title: 'R for Data Science',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/r_for_data_science/";
             },},{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
