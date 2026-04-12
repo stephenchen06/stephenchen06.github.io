@@ -405,6 +405,16 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "books-computational-and-inferential-thinking",
+          title: 'Computational and Inferential Thinking',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/computational_inferential_thinking/";
+            },},{id: "books-hands-on-machine-learning-with-scikit-learn-and-pytorch",
+          title: 'Hands-On Machine Learning with Scikit-Learn and PyTorch',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/hands_on_ml/";
             },},{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
