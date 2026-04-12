@@ -2,7 +2,7 @@
 layout: book-review
 title: Computational and Inferential Thinking
 author: Ani Adhikari, John DeNero, David Wagner
-cover:
+cover: assets/img/book_covers/computational_inferential_thinking.jpg
 categories: data-science statistics textbooks non-fiction
 tags:
 buy_link:

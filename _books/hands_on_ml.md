@@ -2,7 +2,7 @@
 layout: book-review
 title: Hands-On Machine Learning with Scikit-Learn and PyTorch
 author: Aurelien Geron
-cover: https://pictures.abebooks.com/inventory/32337943994.jpg
+cover: assets/img/book_covers/hands_on_ml.jpg
 categories: data-science machine-learning textbooks non-fiction
 tags:
 buy_link:
